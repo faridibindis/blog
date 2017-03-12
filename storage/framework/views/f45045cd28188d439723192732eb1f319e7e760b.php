@@ -13,7 +13,7 @@
 
           <!-- logo -->
           <div class="brand-logo">
-            <img src="{{ asset('images/logo-dark.png') }}" height="15" alt="">
+            <img src="<?php echo e(asset('images/logo-dark.png')); ?>" height="15" alt="">
           </div>
           <!-- /logo -->
 
@@ -70,7 +70,7 @@
                   <li>
                     <a href="javascript:;">
                       <span class="pull-left mt2 mr15">
-                          <img src="{{ asset('images/avatar.jpg') }}" class="avatar avatar-xs img-circle" alt="">
+                          <img src="<?php echo e(asset('images/avatar.jpg')); ?>" class="avatar avatar-xs img-circle" alt="">
                       </span>
                       <div class="overflow-hidden">
                         <span>Sean launched a new application</span>
@@ -94,7 +94,7 @@
                   <li>
                     <a href="javascript:;">
                       <span class="pull-left mt2 mr15">
-                        <img src="{{ asset('images/face3.jpg') }}" class="avatar avatar-xs img-circle" alt="">
+                        <img src="<?php echo e(asset('images/face3.jpg')); ?>" class="avatar avatar-xs img-circle" alt="">
                       </span>
                       <div class="overflow-hidden">
                         <span class="text-muted">Jack Hunt has registered</span>
@@ -112,7 +112,7 @@
 
           <li>
             <a href="javascript:;" data-toggle="dropdown">
-              <img src="{{ asset('images/avatar.jpg') }}" class="header-avatar img-circle ml10" alt="user" title="user">
+              <img src="<?php echo e(asset('images/avatar.jpg')); ?>" class="header-avatar img-circle ml10" alt="user" title="user">
               <span class="pull-left">Samuel Perkins</span>
             </a>
             <ul class="dropdown-menu">

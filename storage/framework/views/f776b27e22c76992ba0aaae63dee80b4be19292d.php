@@ -18,7 +18,7 @@
       <nav class="footer-left">
         <ul class="nav">
           <li>
-            <a href="javascript:;">Copyright <i class="fa fa-copyright"></i> {{date('Y')}}. All rights reserved</a>
+            <a href="javascript:;">Copyright <i class="fa fa-copyright"></i> <?php echo e(date('Y')); ?>. All rights reserved</a>
           </li>
           <li>
             <a href="javascript:;">Geelabs</a>

@@ -1,6 +1,5 @@
-@extends('main')
-@section('title', '| Contact')
-@section('main-content')
+<?php $__env->startSection('title', '| Contact'); ?>
+<?php $__env->startSection('main-content'); ?>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel mb25">
@@ -39,4 +38,5 @@
 		    </div>
 		</div>
 	</div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

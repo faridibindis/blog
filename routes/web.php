@@ -11,16 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(['middleware' => ['web']], function(){
+	Route::get('/contact', 'PagesController@getContact');
+	Route::get('/about', 'PagesController@getAbout');
+	Route::get('/', 'PagesController@getIndex');
+	Route::resource('post', 'PostController');
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
-Route::group(['middleware'=>'auth'],function(){
-
-
-    Route::resource('article','ArticleController');
-});

@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{{ URL::asset('styles/feather.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('styles/animate.css') }}">
   <link rel="stylesheet" href="{{ URL::asset('styles/urban.css') }}">
+   @yield('stylesheets')
   <!-- endbuild -->
 
 </head>
