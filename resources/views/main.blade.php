@@ -31,7 +31,9 @@
 
    
   </div>
-
+  @if (Auth::guest())  
+    @include('partials._loginModal')
+  @endif
   @include('partials._javascript')
 
   @yield('scripts')

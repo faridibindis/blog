@@ -3,7 +3,7 @@
 @section('main-content')
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel mb25">
+			<div class="panel mb25 shadow">
 		      <div class="panel-heading border">
 		        <h3>Please fill the contact form below</h3>
 		      </div>
@@ -26,7 +26,7 @@
 		              <div class="form-group">
 		                <label class="col-sm-3 control-label">Message</label>
 		                <div class="col-sm-8">
-		                  <textarea class="form-control" placeholder="Message"></textarea>
+		                  <textarea class="form-control" placeholder="Message" rows="10" cols="50" style="resize: none;"></textarea>
 		                </div>
 		              </div>
 		              <div class="form-group">

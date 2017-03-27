@@ -6,7 +6,7 @@
   <title>Tech Blog @yield('title')</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('favicon.png') }}">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 

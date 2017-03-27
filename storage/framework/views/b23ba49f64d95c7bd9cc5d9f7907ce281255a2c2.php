@@ -31,7 +31,9 @@
 
    
   </div>
-
+  <?php if(Auth::guest()): ?>  
+    <?php echo $__env->make('partials._loginModal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php endif; ?>
   <?php echo $__env->make('partials._javascript', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
   <?php echo $__env->yieldContent('scripts'); ?>

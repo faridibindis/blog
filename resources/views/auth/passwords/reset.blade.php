@@ -1,6 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class="app layout-fixed-header usersession bg-white">
+    <div class="full-height">
+        <div class="center-wrapper">
+        <div class="center-content">
+            <div class="row no-margin">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <form role="form" action="extras-signin.html" class="form-layout">
+                    <div class="text-center mb15">
+                      <img src="images/logo-dark.png" />
+                    </div>
+                    <p class="text-center mb25">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                    <div class="form-inputs">
+                      <input type="email" class="form-control input-lg" placeholder="Email address" autofocus>
+                    </div>
+
+                    <button class="btn btn-success btn-lg btn-block" type="submit">Send Password Reset</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -14,7 +39,7 @@
                         </div>
                     @endif
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/reset') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('password.request') }}">
                         {{ csrf_field() }}
 
                         <input type="hidden" name="token" value="{{ $token }}">

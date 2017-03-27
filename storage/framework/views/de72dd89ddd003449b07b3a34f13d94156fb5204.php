@@ -6,7 +6,7 @@
   <title>Tech Blog <?php echo $__env->yieldContent('title'); ?></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="<?php echo e(URL::asset('favicon.png')); ?>">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
